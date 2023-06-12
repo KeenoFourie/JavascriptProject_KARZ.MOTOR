@@ -14,14 +14,14 @@ body {
     background-color: black;
 }
 /* links */
-#link_1, #link_2, #link_3 {
+#link_1, #link_2, #link_3, #link_4 {
     color: rgba(106, 0, 106, 0.81);
 }
 #link_1 {
     font-weight: bold;
     font-size: large;
 }
-#link_1:hover, #link_2:hover, #link_3:hover {
+#link_1:hover, #link_2:hover, #link_3:hover, #link_4:hover {
     background-color: purple;
     color: black;
 }
