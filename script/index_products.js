@@ -3,7 +3,7 @@ let landing_page = [
     {
         content_1: "WELCOME TO",
         content_2: "KARZ.MOTOR",
-        content_3: "WHERE BUYING CARS HAS NEVER BEEN EASIER THAN THIS BEFORE",
+        content_3: "BUYING CARS HAS NEVER BEEN EASIER THAN THIS BEFORE",
         
     },
 ]
@@ -12,13 +12,13 @@ let landing_page_content = document.querySelector("#landing_page_welcome");
 landing_page.forEach((data)=> {
     landing_page_content.innerHTML += `
     <div id="landing_page_container">
-        <div id="home_content_1">${data.content_1}</div>
-        <div id="home_content_2">${data.content_2}</div>
-        <div id="home_content_3">${data.content_3}</div>
-    </div>
-    <div id="linked_buttons">
-    <a href="#products" id="button_links">PRODUCT</a>
-    <a href="../html/admin.html" id="button_links">ADMIN</a>
+        <div id="home_content_1"><h3>${data.content_1}</h3></div>
+        <div id="home_content_2"><h1>${data.content_2}</h1></div>
+        <div id="home_content_3"><h3>${data.content_3}</h3></div>
+        <div id="linked_buttons">
+        <a href="#products" id="button_links">PRODUCT<i class="bi bi-arrow-down"></i></a>
+        <a href="../html/admin.html" id="button_links">ADMIN<i class="bi bi-arrow-right"></i></a>
+        </div>
     </div>
     `
 })
