@@ -43,6 +43,66 @@
 
 
 
+
+
+    <main class="container-fluid">
+      <div id="heading">ADMIN:</div>
+      <div id="modal-add">
+          <button type="button" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW CAR</button>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create Your Product:</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Car model:</p>
+                          <input type="text"class="modal-input" id="input_1" placeholder="Tesla..">
+                          <p>Image:</p>
+                          <input type="" class="modal-input" id="input_2" placeholder="Insert image..">
+                          <p>Despcription:</p>
+                          <input type="text" class="modal-input" id="imput_3" placeholder="It's a car on 4 wheels..">
+                          <p>Price:</p>
+                          <input type="text" class="modal-input" id="input_4" placeholder="R20 000...">
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-dark" id="new_product">Add New Product</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="admin_table">
+          <table>
+              <thead id="headings_for_table">
+                  <th>ID:</th>
+                  <th>Car Model:</th>
+                  <th>Image:</th>
+                  <th>Description:</th>
+                  <th>Price:</th>
+                  <th>Edit:</th>
+                  <th>Delete:</th>
+              </thead>
+              <tbody id="product_list">
+              </tbody>
+          </table>
+      </div>
+  </main>
+
+
+
+
+
+
+
+
+
       <!-- Footer -->
       <footer>
         <div id="foot_styling">
