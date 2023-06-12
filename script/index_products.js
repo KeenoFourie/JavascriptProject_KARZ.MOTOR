@@ -19,7 +19,12 @@ landing_page.forEach((data)=> {
         <a href="#products" id="button_links">PRODUCT<i class="bi bi-arrow-down"></i></a>
         <a href="../html/admin.html" id="button_links">ADMIN<i class="bi bi-arrow-right"></i></a>
         </div>
+        <div id="side_note">
+            <img class="img-fluid" src="../images/15890762-removebg-preview.png" alt="carImage">
+            <p>We ensure that you get the best prices at all times for cars that you need, quickly.</p>
+        </div>
     </div>
+
     `
 })
 
