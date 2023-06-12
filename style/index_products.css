@@ -35,3 +35,64 @@ body {
     color: purple;
     text-align: center;
 }
+
+/* home page */
+/* landing page */
+#landing_page_welcome{
+    width: 100%;
+}
+#landing_page_container {
+    background-color: rgba(0, 0, 0, 0.577);
+}
+#landing_page {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/wallpaperflare.com_wallpaper\ \(6\).jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px black;
+    text-shadow: 4px 6px 6px purple;
+}
+/* linked buttons  */
+#button_links {
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    text-shadow: none;
+    box-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.607);
+}
+#linked_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+/* card */
+#product_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}
+#products {
+    height: 100vh;
+}
+.card {
+    background-color: rgba(0, 0, 0, 0.605);
+    color: purple;
+    margin: 0.2rem;
+}
+#heading_products {
+    margin-top: 5rem;
+    font-weight: bold;
+    font-size: xx-large;
+    text-decoration: underline;
+}
