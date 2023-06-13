@@ -1,4 +1,3 @@
-// DOM
 let display = document.querySelector("#product_list");
 let addBtn = document.querySelector("#new_product");
 let product_id = 7;
@@ -57,11 +56,10 @@ let  featured_products = [
 ];
 
 // LocalStorage
-localStorage.setItem('Car_Models', JSON.stringify(featured_products));
+localStorage.setItem("Car_Models", JSON.stringify(featured_products));
 
 
 
-// Table
 function product_listing(){
 featured_products.forEach((data)=>{
     display.innerHTML +=`
@@ -108,6 +106,29 @@ featured_products.forEach((data)=>{
 }
 product_listing()
 
+// Add button
+addBtn.addEventListener("click", add_products);
+function add_products(event) {
+    display.innerHTML = ""
+    event.preventDefault();
+    if(product_description.value, product_image.value, product_model.value, product_price.value = "" ) {
+        alert("Please insert information on your car!")
+        product_listing()
+    }
+    else{
+        featured_products.push({
+            id: product_id,
+            car_model: product_model.value,
+            product_image: product_image.value,
+            description: product_description.value,
+            price: product_price.value,
+        });
+        product_id++;
+        product_model.value, product_image.value, product_description.value, product_price.value = "";
+        localStorage.setItem("Car_Models", JSON.stringify(featured_products));
+        adminList();
+    }
+}
 
 
 // // Adding to the a new blog
