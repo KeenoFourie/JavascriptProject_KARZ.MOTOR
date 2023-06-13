@@ -11,14 +11,14 @@ body {
     height: 6rem;
 }
 /* links */
-#link_1, #link_2, #link_3, #link_4 {
+#link_1, #link_2, #link_3 {
     color: black;
 }
 #link_2 {
     font-weight: bold;
     font-size: large;
 }
-#link_1:hover, #link_2:hover, #link_3:hover, #link_4:hover {
+#link_1:hover, #link_2:hover, #link_3:hover {
 font-weight: bold;}
 /* footer */
 #footer_styling {
