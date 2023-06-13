@@ -16,12 +16,169 @@ body {
 }
 #link_1 {
     font-weight: bold;
-    font-size: large;
 }
 #link_1:hover, #link_2:hover, #link_3:hover {
 font-weight: bold;}
 /* footer */
-#footer_styling {
-    color: white;
+#foot_styling {
+    color: rgba(0, 0, 0, 0.664);
     text-align: center;
+    box-shadow: 1rem 1rem 1rem 1rem;
+}
+
+/* navbar */
+#navbar_styling {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    padding: 0;
+}
+#logo {
+    height: 5rem;
+}
+
+
+
+/* landing page */
+#landing_page_welcome {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+#landing_page_container {
+    margin-top: 5rem;
+    width: 90%;
+    background-color: rgb(0, 157, 255);
+    box-shadow: 0 0 25px black;
+    border-radius: 0.3rem;
+    height: max-content;
+    padding: 1rem;
+}
+#about_part {
+    width: 85%;
+}
+#home_content_2 {
+    text-decoration: underline;
+}
+
+/* image */
+#transparent_car {
+    height: 15rem;
+}
+
+
+/* buttons */
+#button_links {
+    background-color: black;
+    text-decoration: none;
+    color: rgb(0, 157, 255);
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    width: min-content;
+    font-weight: bold;
+    font-size: small;
+    box-shadow: 0 0 25px black;
+}
+#button_links:hover {
+    background-color: transparent;
+    color: black;
+}
+
+/* about section */
+/* about container */
+#about_part {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: max-content;
+    margin-top: 9rem;
+    padding: 2rem;
+}
+/* about button contact us */
+#contact_us_button {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+#contact_us_button:hover {
+    background-color: black;
+    color: grey;
+}
+
+
+
+/* featured products */
+/* full body */
+#products {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.1rem;
+    margin-top: 4rem;
+}
+/* heading */
+#heading_products {
+    margin-top: 5rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#products_page_container {
+    margin: 0.5rem;
+}
+/* images */
+#car_pics {
+    background-color: rgba(0, 0, 0, 0.416);
+}
+#body_of_card {
+    height: 9rem;
+}
+
+/* footer and contact form */
+#contact_footer {
+    background-color: rgba(0, 0, 0, 0.416);
+    margin: 2rem;
+    width: 50%;
+    border-radius: 0.3rem;
+}
+#contact_form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#form_inputs_style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    padding: 1rem;
+}
+/* inputs */
+#exampleInputName1 {
+    width: 50%;
+    text-align: center;
+}
+#exampleInputSurname1 {
+    width: 50%;
+    text-align: center;
+}
+#exampleInputEmail1 {
+    width: 60%;
+    text-align: center;
+}
+#exampleFormComments {
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+/* space */
+#space {
+    margin-bottom: 2rem;
 }
