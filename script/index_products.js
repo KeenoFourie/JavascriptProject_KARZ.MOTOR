@@ -15,19 +15,20 @@ landing_page.forEach((data)=> {
         <div id="home_content_1"><h3>${data.content_1}</h3></div>
         <div id="home_content_2"><h1>${data.content_2}</h1></div>
         <div id="home_content_3"><h3>${data.content_3}</h3></div>
+        <div id="side_note">
+        <img class="img-fluid" id="transparent_car" src="../images/15890762-removebg-preview.png" alt="carImage">
+        <p>We ensure that you get the best prices at all times for cars that you need, quickly.</p>
+        </div>
         <div id="linked_buttons">
-        <a href="#products" id="button_links">PRODUCT<i class="bi bi-arrow-down"></i></a>
+        <a href="#products" id="button_links">PRODUCTS<i class="bi bi-arrow-down"></i></a>
         <a href="../html/admin.html" id="button_links">ADMIN<i class="bi bi-arrow-right"></i></a>
         </div>
-        <div id="side_note">
-            <img class="img-fluid" src="../images/15890762-removebg-preview.png" alt="carImage">
-            <p>We ensure that you get the best prices at all times for cars that you need, quickly.</p>
         </div>
-    </div>
-    <div class="container-fluid">
-        <img src="../images/Etsy Item Listing Photo.png" alt="logo" loading="lazy" class="img-fluid">
+    <div class="container-fluid" id="about_part">
+        <img id="logo_in_body" src="https://i.postimg.cc/RCgMGj5J/logo-removebg-preview.png" alt="logo" loading="lazy" class="img-fluid">
         <div id="about_paragraph">
-            <p> If the customer is very smart, he or she will be able to achieve the desired result. What pains of truth, unless resolved, do we abandon to the discoverer, because there is none of them, and the mistake of refusing the flattery of the wise will result? Those who are blinded by the rejection of the matter, for pain will not follow! Pain will be chosen with us! There is no effort to refuse, but from time to time he hates, to make ours just harsher, but he is bound to flee from his flattery. I followed the harsher and painful distinction. This, indeed, in such a way as to find a more laborious and less pleasurable exercise of flexibility, which he does not have the most, is refused by the harsher to the most worthy, the milder hinders the discomfort, and the rougher flees with the least reason. The laborious, dignified, but more difficult to follow will be reserved for the flight of distinction that seeks the offices. For us, the whole pleasure of rejecting the right, often escapes nothing, escapes the inventor to achieve by carrying something that said? Blinded by the pain of the law, the pains of the pleasures, the pains of the pleasures can we be the architect of the soul praising the pleasures of life. The less the body of truth, let him please the pleasures, his abandon the architect to follow that we accuse him of guilt and no exercise is spared when things happen! Those present, or often expedient, and criticized by those who accuse us of the great labors which, when we acquire such a mode as ours, are obliged to reject the laborious error. What, then, are the pains of these troubles? When it is expedient and that will happen, everyone, will, less often but they don't know, will criticize the refusal and those things that either interfere with the needs of the accused at the time of other pleasures? We accuse him of discovering the opening of the great pains of that very flight, when he is often rightly accused by the duties of his accusers, hinders him from carrying things out, and takes on other similar things; To do so in his present, in times of rejection of the pleasures of the fault, which especially whence he had a great right flexibility. They do not know the comforts, they want to be blinded by some kind of separation of pains, but no one hates them either. It is repulsed unless pleasure is pleasures or labors, the pains of the truth itself, some periods of pleasures, as if he were prepared to bear them, he is repulsed by the flattery of these, but they result in rejecting them. </p>
+            <p>This company was formed to make buying and selling cars so much easier and more convenient. We are 100% into making your experience comfortable and enjoyable and take pride in giving you the best service we can possibly give. We love hearing from everyone and your input and feedback is much appreciated. </p>
+            <a href="#contact_form" id="contact_us_button">CONTACT US</a>
         </div>
     </div>
 
@@ -39,92 +40,72 @@ landing_page.forEach((data)=> {
 let products_page = [
     {
         id: "1",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2023 Suzuki Swift 1.4T Sport Auto",
+        image_url: "https://i.postimg.cc/G3kRDhvb/2023-Suzuki-Swift-1-4-T-Sport-Auto-removebg-preview.png",
+        price: "R 209 900",
     },
     {
         id: "2",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2017 Volkswagen Amarok 2.0TDI Double Cab Trendline 4Motion",
+        image_url: "https://i.postimg.cc/1tXgtV8R/2017-Volkswagen-Amarok-2-0-TDI-Double-Cab-Trendline-4-Motion-removebg-preview.png",
+        price: "R 339 990",
     },
     {
         id: "3",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2017 Renault Duster 1.6 Dynamique",
+        image_url: "https://i.postimg.cc/nVgCTLPg/2017-Renault-Duster-1-6-Dynamique-removebg-preview.png",
+        price: "R 104 900",
     },
     {
         id: "4",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2018 Ford Focus Hatch 1.0T Ambiente",
+        image_url: "https://i.postimg.cc/zBLg72nY/2018-Ford-Focus-Hatch-1-0-T-Ambiente-removebg-preview.png",
+        price: "R 219 950",
     },
     {
         id: "5",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2021 Audi A1 Sportback 30TFSI S Line",
+        image_url: "https://i.postimg.cc/4N8X4fDw/2021-Audi-A1-Sportback-30-TFSI-S-Line-removebg-preview.png",
+        price: "R 399 990",
     },
     {
         id: "6",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2022 Toyota Fortuner 2.4GD-6 Auto",
+        image_url: "https://i.postimg.cc/8zWXKwmW/2022-Toyota-Fortuner-2-4-GD-6-Auto-removebg-preview.png",
+        price: "R 569 895",
     },
     {
         id: "7",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
+        car_model: "2018 Ford Ranger 2.2TDCi Double Cab Hi-Rider XL Auto",
+        image_url: "https://i.postimg.cc/W48nCyFD/2018-Ford-Ranger-2-2-TDCi-Double-Cab-Hi-Rider-XL-Auto-removebg-preview.png",
+        price: "R 359 950",
     },
     {
         id: "8",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
-    },
-    {
-        id: "9",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
-    },
-    {
-        id: "10",
-        title: "ljfdn",
-        imageUrl: "sjdfbk",
-        description: "oufsdjcn",
-        price: "oewfusdjl",
-    },
+        car_model: "2020 BMW M8 Competition Gran Coupe",
+        image_url: "https://i.postimg.cc/6pXRLhjy/2020-BMW-M8-M8-Competition-Gran-Coupe-removebg-preview.png",
+        price: "R 1 899 990",
+    }
 ]
 // display products page content
 let products_page_content = document.querySelector("#product_list");
-products_page.forEach((product)=> {
+products_page.forEach((product)=> { 
     products_page_content.innerHTML += `
     <div id="products_page_container">
             <div class="card" style="width: 18rem;">
-                <img src="${product.imageUrl}" class="card-img-top" alt="images" loading="lazy">
-                <div class="card-body">
-                    <h5 class="card-title">${product.title}</h5>
-                    <p class="card-text">${product.description}</p>
-                    <a href="../html/checkout.html" class="btn btn-primary">+ Cart</a>
+                <img id="car_pics" src="${product.image_url}" class="card-img-top img-fluid" alt="images" loading="lazy">
+                <div class="card-body" id="body_of_card">
+                    <h5 class="card-car_title">${product.car_model.slice(0, 18)+" ..."}</h5>
+                    <p class="card-text">${product.price}</p>
+                    <a href="../html/checkout.html" class="btn btn-primary" id="cart_add">+ Cart</a>
                 </div>
             </div>
     </div>
     `
 })
 
+
+// contact form
 let contact_footer_page = [
     {
         
@@ -135,18 +116,21 @@ contact_footer_page.forEach((product)=> {
     contact_form.innerHTML += `
     <div id="contact_footer">
     <form>
-    <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div class="mb-3" id="form_inputs_style">
+          <label for="exampleInputName" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="exampleInputName1" placeholder="Please enter your name..." aria-describedby="nameHelp" required>
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+    <div class="mb-3" id="form_inputs_style">
+          <label for="exampleInputSurname" class="form-label">Surname:</label>
+          <input type="text" class="form-control" id="exampleInputSurname1" placeholder="Please enter your surname..." aria-describedby="surnameHelp" required>
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="mb-3" id="form_inputs_style">
+          <label for="exampleInputEmail" class="form-label">Email address:</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="We won't share your email with anyone else..." aria-describedby="emailHelp" required>
+    </div>
+    <div class="mb-3" id="form_inputs_style">
+        <label for="exampleFormControlTextarea1" class="form-label">Comments or Issues:</label>
+        <textarea class="form-control" id="exampleFormComments" rows="3" placeholder="Insert your comments here..."></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
