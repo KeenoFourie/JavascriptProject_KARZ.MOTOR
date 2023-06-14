@@ -77,3 +77,22 @@ table {
 #images_of_cars_in_javascript {
     height: 7rem;
 }
+
+/* sorting button */
+#sort_button {
+    color: white;
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: medium;
+    padding: 7px;
+}
+#sorting_and_add_button {
+    display: flex;
+    align-items: center;
+}
+
+/* search button  */
+#search_bar {
+    
+}
