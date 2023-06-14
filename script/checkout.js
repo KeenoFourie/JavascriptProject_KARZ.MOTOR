@@ -1,27 +1,27 @@
-// // products page section
-// let checkout_page = [
-//     {
-//         id: "1",
-//         title: "ljfdn",
-//         imageUrl: "sjdfbk",
-//         description: "oufsdjcn",
-//         price: "oewfusdjl",
-//     },
-//     {
-//         id: "2",
-//         title: "ljfdn",
-//         imageUrl: "sjdfbk",
-//         description: "oufsdjcn",
-//         price: "oewfusdjl",
-//     }
-// ]
-// // display products page content
-// let checkout_items = document.querySelector("#checkout_content");
-// checkout_page.forEach((product)=> {
-//     checkout_items.innerHTML += `
-//     <div id="products_page_container">
-//             <img src="${product.imageUrl}" class="card-img-top" alt="images" loading="lazy">
-//             <h5 class="card-title">${product.price}</h5>
-//     </div>
-//     `
-// })
+// contact form
+let checkout_page = [
+    {
+        
+    }
+]
+let checkout_content = document.querySelector("#checkout_content");
+checkout_page.forEach((product)=> {
+    checkout_content.innerHTML += `
+    <div id="checkout_full_page" class="container-fluid">
+    <button id="button_for_checkout">PURCHASE<i class="bi bi-arrow-bar-right display-6"></i></button>
+    </div>
+    `
+})
+
+// purchase thanks
+let purchase = document.querySelector("#button_for_checkout")
+let display = document.querySelector("#checkout_content")
+
+purchase.addEventListener("click", purchase_thanks);
+function purchase_thanks() {
+    display.innerHTML += `
+    <div id="thanks_for_buyng">
+        <p>THANKS FOR YOUR PURCHASE. IT WILL BE ATTENDED TO SOON.</p>
+    </div>
+    `
+}
