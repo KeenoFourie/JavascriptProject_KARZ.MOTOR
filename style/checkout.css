@@ -16,12 +16,26 @@ body {
 }
 #link_3 {
     font-weight: bold;
-    font-size: large;
 }
 #link_1:hover, #link_2:hover, #link_3:hover {
 font-weight: bold;}
 /* footer */
-#footer_styling {
-    color: white;
+#foot_styling {
+    color: rgba(0, 0, 0, 0.664);
     text-align: center;
+    box-shadow: 1rem 1rem 1rem 1rem;
+}
+
+/* navbar */
+#navbar_styling {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    padding: 0;
+}
+#logo {
+    height: 5rem;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
