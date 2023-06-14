@@ -35,8 +35,34 @@ font-weight: bold;}
     height: 5rem;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
+
+/* body */
+/* heading */
+#heading {
+    margin-top: 3rem;
+    font-size: xx-large;
+    font-weight: bold;
+}
+/* button */
+#button_add_car {
+    margin: 1rem;
+}
+/* table */
+/* lines and spacing */
+th, td {
+    border: 2px solid black;
+}
+th {
+    font-size: large;
+}
+table {
+    margin-bottom: 2rem;
+}
+#car_model_width {
+    width: 30%;
+}
+/* images */
+#images_of_cars_in_javascript {
+    height: 7rem;
 }
