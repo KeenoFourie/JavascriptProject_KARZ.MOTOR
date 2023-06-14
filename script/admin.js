@@ -138,6 +138,10 @@ sortBtn.addEventListener("click", () => {
 
 // search bar
 
+let search = document.querySelector("#search_button")
+ function search_items() {
+    
+ }
 
 
 
