@@ -44,21 +44,22 @@
 
     <main class="container-fluid">
       <div id="heading">ADMIN:</div>
-      <div id="modal-add">
+      <div id="sorting_and_add_button">
+        <div id="modal-add">
           <button type="button" class="btn btn-primary" id="button_add_car" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW CAR</button>
 
-
+          
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
+          aria-hidden="true">
               <div class="modal-dialog">
                   <div class="modal-content">
-                      <div class="modal-header">
+                    <div class="modal-header">
                           <h1 class="modal-title fs-5" id="exampleModalLabel">Create Your Product:</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
+                        </div>
                       <div class="modal-body">
-                          <p>Car model:</p>
+                        <p>Car model:</p>
                           <input type="text"class="modal-input" id="input_1" placeholder="Tesla..">
                           <p>Image:</p>
                           <input type="text" class="modal-input" id="input_2" placeholder="Insert image..">
@@ -73,23 +74,32 @@
                       </div>
                   </div>
               </div>
+            </div>
           </div>
-      </div>
 
 <!-- sorting button -->
       <div id="sorting_button">
-        <button id="sort_button">SORT ITEMS</button>
+          <button id="sort_button">SORT ITEMS</button>
       </div>
 
+<!-- search items -->
+      <form class="d-flex" role="search" id="search_bar">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+      </form>
 
+
+    </div>
+      
+      
       <div id="admin_table">
-          <table class="container-fluid">
-              <thead id="headings_for_table">
-                  <th>ID:</th>
-                  <th id="car_model_width">Car Model:</th>
-                  <th>Image:</th>
-                  <th>Description:</th>
-                  <th>Price:</th>
+        <table class="container-fluid">
+          <thead id="headings_for_table">
+            <th>ID:</th>
+            <th id="car_model_width">Car Model:</th>
+            <th>Image:</th>
+            <th>Description:</th>
+            <th>Price:</th>
                   <th>Edit:</th>
                   <th>Delete:</th>
               </thead>
