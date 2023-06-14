@@ -1,3 +1,7 @@
+
+
+
+
 // Landing page section
 let landing_page = [
     {
@@ -37,7 +41,11 @@ landing_page.forEach((data)=> {
 
 
 // products page section
-let products_page = [
+let display = document.querySelector("#product_list")
+
+
+
+let  featured_products = JSON.parse(localStorage.getItem("Car_Models")) ? JSON.parse(localStorage.getItem("Car_Models")) : localStorage.setItem("Car_Models",JSON.stringify([
     {
         id: "1",
         car_model: "2023 Suzuki Swift 1.4T Sport Auto",
@@ -53,7 +61,7 @@ let products_page = [
     {
         id: "3",
         car_model: "2017 Renault Duster 1.6 Dynamique",
-        image_url: "https://i.postimg.cc/nVgCTLPg/2017-Renault-Duster-1-6-Dynamique-removebg-preview.png",
+        image_url: "https://i.postimg.cc/nVgCTLPg/201r7-Renault-Duster-1-6-Dynamique-removebg-preview.png",
         price: "R 104 900",
     },
     {
@@ -86,12 +94,14 @@ let products_page = [
         image_url: "https://i.postimg.cc/6pXRLhjy/2020-BMW-M8-M8-Competition-Gran-Coupe-removebg-preview.png",
         price: "R 1 899 990",
     }
-]
+    
+]));
+
 // display products page content
-let products_page_content = document.querySelector("#product_list");
-products_page.forEach((product)=> { 
-    products_page_content.innerHTML += `
-    <div id="products_page_container">
+try{
+    featured_products.forEach((product)=>{
+        display.innerHTML +=`
+        <div id="products_page_container">
             <div class="card" style="width: 18rem;">
                 <img id="car_pics" src="${product.image_url}" class="card-img-top img-fluid" alt="images" loading="lazy">
                 <div class="card-body" id="body_of_card">
@@ -101,8 +111,15 @@ products_page.forEach((product)=> {
                 </div>
             </div>
     </div>
-    `
-})
+        `
+    })
+}catch(e){
+    location.reload()
+}
+
+
+
+
 
 
 // contact form
@@ -111,6 +128,7 @@ let contact_footer_page = [
         
     }
 ]
+// displaying contact form content
 let contact_form = document.querySelector("#contact_form");
 contact_footer_page.forEach((product)=> {
     contact_form.innerHTML += `

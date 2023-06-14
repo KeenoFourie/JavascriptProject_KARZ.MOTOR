@@ -1,3 +1,5 @@
+let prod = JSON.parse(localStorage.getItem("Car_Models"));
+
 let display = document.querySelector("#product_list");
 let addBtn = document.querySelector("#new_product");
 let del_button = document.querySelector("#delete_button")
@@ -7,8 +9,6 @@ let product_model = document.querySelector("#input_1");
 let product_image = document.querySelector("#input_2");
 let product_description = document.querySelector("#input_3");
 let product_price = document.querySelector("#input_4");
-
-
 
 
 // Admin Products(objects)
@@ -84,7 +84,7 @@ function add_products() {
         alert("Please insert information on your car!")
         product_listing()
     } else {
-        featured_products.push({
+        prod.push({
             id: product_id,
             car_model: product_model.value,
             image_url: product_image.value,
@@ -94,9 +94,12 @@ function add_products() {
         product_id++;
         product_description.value = "", product_image.value = "", product_model.value = "", product_price.value = "" ;
         localStorage.setItem("Car_Models", JSON.stringify(featured_products));
+        location.reload();
         product_listing();
     }
 }
+
+localStorage.setItem("Car_Models", JSON.stringify(featured_products));
 
 
 
@@ -105,7 +108,7 @@ function delete_button(){
         del_button = [...document.querySelectorAll("#delete_button")];
         del_button.forEach((products)=>{
             products.addEventListener("click", delete_products)
-
+            localStorage.setItem("Car_Models", JSON.stringify(featured_products));
         })
     }
     function delete_products(event){
@@ -115,6 +118,7 @@ function delete_button(){
         localStorage.setItem("Car_Models", JSON.stringify(featured_products));
         product_listing()
     }
+
 
 
 // edit button
