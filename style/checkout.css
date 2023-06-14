@@ -39,3 +39,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* social links */
+#social_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+#social_link_images {
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    image-rendering: optimizeQuality;
+}
