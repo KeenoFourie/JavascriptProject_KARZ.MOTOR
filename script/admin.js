@@ -15,56 +15,56 @@ let product_price = document.querySelector("#input_4");
 let  featured_products = [
     {
         id: "1",
-        car_model: "2023 Suzuki Swift 1.4T Sport Auto",
+        car_model: "Suzuki Swift 1.4T Sport Auto 2023",
         image_url: "https://i.postimg.cc/G3kRDhvb/2023-Suzuki-Swift-1-4-T-Sport-Auto-removebg-preview.png",
         description: "",
         price: "R 209 900",
     },
     {
         id: "2",
-        car_model: "2017 Volkswagen Amarok 2.0TDI Double Cab Trendline 4Motion",
+        car_model: "Volkswagen Amarok 2.0TDI Double Cab Trendline 4Motion 2017",
         image_url: "https://i.postimg.cc/1tXgtV8R/2017-Volkswagen-Amarok-2-0-TDI-Double-Cab-Trendline-4-Motion-removebg-preview.png",
         description: "",
         price: "R 339 990",
     },
     {
         id: "3",
-        car_model: "2017 Renault Duster 1.6 Dynamique",
+        car_model: "Renault Duster 1.6 Dynamique 2017",
         image_url: "https://i.postimg.cc/nVgCTLPg/2017-Renault-Duster-1-6-Dynamique-removebg-preview.png",
         description: "",
         price: "R 104 900",
     },
     {
         id: "4",
-        car_model: "2018 Ford Focus Hatch 1.0T Ambiente",
+        car_model: "Ford Focus Hatch 1.0T Ambiente 2018",
         image_url: "https://i.postimg.cc/zBLg72nY/2018-Ford-Focus-Hatch-1-0-T-Ambiente-removebg-preview.png",
         description: "",
         price: "R 219 950",
     },
     {
         id: "5",
-        car_model: "2021 Audi A1 Sportback 30TFSI S Line",
+        car_model: "Audi A1 Sportback 30TFSI S Line 2021",
         image_url: "https://i.postimg.cc/4N8X4fDw/2021-Audi-A1-Sportback-30-TFSI-S-Line-removebg-preview.png",
         description: "",
         price: "R 399 990",
     },
     {
         id: "6",
-        car_model: "2022 Toyota Fortuner 2.4GD-6 Auto",
+        car_model: "Toyota Fortuner 2.4GD-6 Auto 2022",
         image_url: "https://i.postimg.cc/8zWXKwmW/2022-Toyota-Fortuner-2-4-GD-6-Auto-removebg-preview.png",
         description: "",
         price: "R 569 895",
     },
     {
         id: "7",
-        car_model: "2018 Ford Ranger 2.2TDCi Double Cab Hi-Rider XL Auto",
+        car_model: "Ford Ranger 2.2TDCi Double Cab Hi-Rider XL Auto 2018",
         image_url: "https://i.postimg.cc/W48nCyFD/2018-Ford-Ranger-2-2-TDCi-Double-Cab-Hi-Rider-XL-Auto-removebg-preview.png",
         description: "",
         price: "R 359 950",
     },
     {
         id: "8",
-        car_model: "2020 BMW M8 Competition Gran Coupe",
+        car_model: "BMW M8 Competition Gran Coupe 2020",
         image_url: "https://i.postimg.cc/6pXRLhjy/2020-BMW-M8-M8-Competition-Gran-Coupe-removebg-preview.png",
         description: "",
         price: "R 1 899 990",
@@ -119,7 +119,22 @@ function delete_button(){
         product_listing()
     }
 
+// sort button
 
+let sortBtn = document.querySelector("#sort_button")
+
+sortBtn.addEventListener("click", () => {
+    featured_products = featured_products.sort((a, b) => {
+        if(a.car_model < b.car_model){
+            return -1;
+        }
+        else {
+            return 1;
+        }
+    })
+    display.innerHTML = ""
+    product_listing();
+})
 
 // edit button
 
