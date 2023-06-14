@@ -44,7 +44,7 @@
 
     <main class="container-fluid">
       <div id="heading">ADMIN:</div>
-      <div id="sorting_and_add_button">
+      <div id="sorting_search_add_button">
         <div id="modal-add">
           <button type="button" class="btn btn-primary" id="button_add_car" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD NEW CAR</button>
 
@@ -83,10 +83,13 @@
       </div>
 
 <!-- search items -->
-      <form class="d-flex" role="search" id="search_bar">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-primary" type="submit">Search</button>
-      </form>
+
+<form class="d-flex" role="search" id="search_bar">
+  <input id="input_search" class="form-control me-2" type="search" placeholder="Filter" aria-label="Search" onkeyup="search_cars">
+  <button class="btn btn-outline-primary" type="submit" id="search_button" onclick="search_items()"><i class="bi bi-search"></i></button>
+</form>
+
+
 
 
     </div>
@@ -107,6 +110,11 @@
 
               </tbody>
           </table>
+      </div>
+
+
+      <div id="search_result">
+        
       </div>
   </main>
 

@@ -87,12 +87,13 @@ table {
     font-size: medium;
     padding: 7px;
 }
-#sorting_and_add_button {
+#sorting_search_add_button {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 /* search button  */
-#search_bar {
-    
+::placeholder {
+    color: rgba(0, 0, 0, 0.393);
 }
