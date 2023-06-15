@@ -327,7 +327,6 @@ function product_listing(){
         <td id="product_item_id">${data.id}</td>
         <td id="product_car_model">${data.car_model}</td>
         <td id="product_image"><img id="images_of_cars_in_javascript" class="image" src="${data.image_url}" loading="lazy" alt="${data.car_model}"></td>
-        <td id="product_descriptions">${data.description}</td>
         <td id="product_prices">${data.price}</td>
         <td id="product_edit_button">
         <!-- Button trigger modal -->

@@ -150,3 +150,42 @@ table {
     font-style: normal;
     cursor: pointer;
 }
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    #link_1, #link_2, #link_3 {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.351);
+    }
+    #navbar_styling {
+        padding: 0.5rem;
+    }
+    #product_image, #image, #edit, #product_edit_button {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #logo {
+        display: none;
+    }
+    #sorting_search_add_button {
+        display: block;
+        justify-content: center;
+    }
+    #button_add_car, #sort_button, #reload_button, #filter {
+        margin: 1rem;
+    }
+    #reload {
+        margin: 1rem;
+    }
+    #product_image, #id, #image, #product_item_id, #edit, #product_edit_button {
+        display: none;
+    }
+}

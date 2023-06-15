@@ -79,7 +79,7 @@ footer {
     border: 2px solid black;
     border-radius: 0.3rem;
     position: fixed;
-    top: 30vh;
+    top: 20vh;
     padding: 5rem;
     background-color: white;
     font-size: x-large;
@@ -129,4 +129,62 @@ footer {
     border: none;
     border-radius: 0.3rem;
     padding: 0.3rem;
+}
+/* pay button */
+#pay {
+    color: rgb(0, 0, 0);
+    background-color: #0D6EFD;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+#pay:hover {
+    color: white;
+    background-color: #000000;
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+#close_button:hover {
+    color: black;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    #link_1, #link_2, #link_3 {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.351);
+    }
+    #navbar_styling {
+        padding: 0.5rem;
+    }
+    #thanks_for_buyng {
+        border: 2px solid black;
+        padding: 1rem;
+        font-size: medium;
+        font-weight: normal;
+        background-color: #0D6EFD;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin-top: 1rem;
+    }
+    #button_checkout {
+        margin-bottom: 10rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #logo {
+        display: none;
+    }
+    #thanks_for_buyng {
+        height: 50vh;
+    }
 }

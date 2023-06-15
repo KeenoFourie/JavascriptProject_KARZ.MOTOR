@@ -10,9 +10,12 @@ function purchase_thanks() {
             <i class="bi bi-x-circle" onclick="reload()" id="close_button"></i>
         </div>
         <p>THANKS FOR YOUR PURCHASE. IT WILL BE ATTENDED TO SOON.</p>
+        <p>YOUR PURCHASE WILL COST R549,890</p>
+        <p><button onclick="reload()" id="pay">PAY</button></p>
     </div>
     `
 }
+
 
 // reload button
 function reload() {
@@ -41,15 +44,6 @@ Object.keys(store_purchase).forEach( (product) => {
 
 // delete button for items in cart
 // delete button
-
-// let delete_for_cart = document.querySelector("#delete_cart_item")
-
-// function delete_button() {
-//     display.innerHTML = ""
-//         let start_point = delete_for_cart.indexOf(event.target);
-//         product_checkout.splice(1, 1);
-//         localStorage.removeItem("check_out");
-// }
 
 let delete_checkout_button = document.querySelector('#delete_cart_item')
     delete_checkout_button.addEventListener("click", () => {
