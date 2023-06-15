@@ -192,3 +192,39 @@ form {
 #space {
     margin-bottom: 2rem;
 }
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 700px) {
+    #link_1, #link_2, #link_3 {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.351);
+    }
+    #navbar_styling {
+        padding: 0.5rem;
+    }
+    #landing_page_welcome {
+        display: block;
+        flex-direction: row;
+    }  
+    #landing_page_container {
+        box-shadow: none;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    #contact_footer {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #logo {
+        display: none;
+    }
+    #transparent_car {
+        display: none;
+    }
+}
