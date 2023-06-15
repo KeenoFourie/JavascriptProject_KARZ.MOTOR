@@ -38,3 +38,21 @@ Object.keys(store_purchase).forEach( (product) => {
     </div>
     `
 })
+
+// delete button for items in cart
+// delete button
+
+// let delete_for_cart = document.querySelector("#delete_cart_item")
+
+// function delete_button() {
+//     display.innerHTML = ""
+//         let start_point = delete_for_cart.indexOf(event.target);
+//         product_checkout.splice(1, 1);
+//         localStorage.removeItem("check_out");
+// }
+
+let delete_checkout_button = document.querySelector('#delete_cart_item')
+    delete_checkout_button.addEventListener("click", () => {
+        localStorage.removeItem("check_out")
+        location.reload()
+})
