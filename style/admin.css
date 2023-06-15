@@ -104,6 +104,9 @@ table {
 }
 
 /* filter button  */
+#filter_b {
+    font-style: normal;
+}
 #filter_price_low_to_high {
     border: 2px solid black;
     width: 18rem;
@@ -134,4 +137,16 @@ table {
     width: min-content;
     padding: 0.3rem;
     background-color: rgba(0, 0, 0, 0.25);
+}
+/* reload button */
+#reload_button {
+    color: white;
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: medium;
+    padding: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    cursor: pointer;
 }

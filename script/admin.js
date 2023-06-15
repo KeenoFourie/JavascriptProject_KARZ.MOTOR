@@ -1,4 +1,3 @@
-let prod = JSON.parse(localStorage.getItem("Car_Models"));
 
 let display = document.querySelector("#product_list");
 let addBtn = document.querySelector("#new_product");
@@ -252,7 +251,7 @@ let filter = document.querySelector("#search_result");
 filter_items.forEach((product)=> {
     filter.innerHTML += `
     <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="filter"><i class="bi bi-funnel"></i></button>
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="filter"><i class="bi bi-funnel" id="filter_b"> FILTER </i></button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="#" id="price_filter_1">Price (Lowest - Highest)</a></li>
     <li><a class="dropdown-item" href="#" id="price_filter_2">Price (Highest - Lowest)</a></li>
@@ -280,7 +279,7 @@ low_to_high.forEach((data)=>{
     <div id="product_image"><img id="images_of_cars_in_javascript" class="image" src="${data.image_url}" loading="lazy" alt="${data.car_model}"></div>
     <div id="product_car_model">${data.car_model.slice(0, 18)+" ..."}</div>
     <div id="product_prices">${data.price}</div>
-    <a href="../html/checkout.html" class="btn btn-primary" id="cart_add">+ Cart</a>
+    <a href="../index_products.html#product_list" class="btn btn-primary" id="cart_add">Go to Products</a>
     </div>
     `
 })}
@@ -305,11 +304,16 @@ high_to_low.forEach((data)=>{
     <div id="product_image"><img id="images_of_cars_in_javascript" class="image" src="${data.image_url}" loading="lazy" alt="${data.car_model}"></div>
     <div id="product_car_model">${data.car_model.slice(0, 18)+" ..."}</div>
     <div id="product_prices">${data.price}</div>
-    <a href="../html/checkout.html" class="btn btn-primary" id="cart_add">+ Cart</a>
+    <a href="../index_products.html#product_list" class="btn btn-primary" id="cart_add">Go to Products</a>
     </div>
     `
 })}
 
+
+// reload button
+function reload() {
+    location.reload()
+}
 
 
 // edit button
@@ -370,4 +374,12 @@ function save() {
 
 function show() {
     display.innerHTML = localStorage.getItem("Car_Model")   
+}
+
+
+// checkout
+function addToCheckout(product_list) {
+    product_checkout.push(product_list);
+    localStorage.setItem("check_out", JSON.stringify(product_checkout));
+    console.log(product_checkout);
 }
