@@ -106,7 +106,7 @@ footer {
     margin: 0.5rem;
 }
 #card_checkout {
-    height: 19rem;
+    height: rem;
 }
 /* checkout button */
 #button_checkout {
@@ -121,4 +121,12 @@ footer {
 }
 #checkout_button:hover {
     cursor: pointer;
+}
+/* delete checkout item */
+#delete_cart_item {
+    color: white;
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
 }
