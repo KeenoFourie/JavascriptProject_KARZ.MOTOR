@@ -35,9 +35,10 @@ font-weight: bold;}
     height: 5rem;
 }
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: white;
 }
 /* social links */
 #social_links {
@@ -53,17 +54,71 @@ footer {
 /* button for checkout */
 #button_for_checkout {
     text-decoration: none;
+    background-color: white;
     color: black;
     border: 2px solid black;
     border-radius: 0.3rem;
     position: fixed;
     bottom: 22%;
     right: 5%;
-    background-color: rgba(0, 0, 0, 0.581);
     display: flex;
     align-items: center;
     text-align: center;
     font-size: large;
     padding: 0.3rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.445);
+}
+#button_for_checkout:hover {
+    border: none;
+    color: white;
+    background-color: #0D6EFD;
+}
+
+/* thanks for buying ending */
+#thanks_for_buyng {
+    border: 2px solid black;
+    border-radius: 0.3rem;
+    position: fixed;
+    top: 30vh;
+    padding: 5rem;
+    background-color: white;
+    font-size: x-large;
+    font-weight: bold;
+}
+#thanks_for_buyng:hover {
+    color: white;
+    background-color: #0D6EFD;
+    cursor: default;
+}
+/* close button */
+#close_button {
+    cursor: pointer;
+}
+/* checkout */
+#checkout_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+#products_page_container {
+    margin: 0.5rem;
+}
+#card_checkout {
+    height: 19rem;
+}
+/* checkout button */
+#button_checkout {
+    margin-bottom: 8rem;
+}
+#checkout_button {
+    color: white;
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+}
+#checkout_button:hover {
+    cursor: pointer;
 }

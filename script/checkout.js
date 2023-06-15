@@ -1,27 +1,40 @@
-// contact form
-let checkout_page = [
-    {
-        
-    }
-]
-let checkout_content = document.querySelector("#checkout_content");
-checkout_page.forEach((product)=> {
-    checkout_content.innerHTML += `
-    <div id="checkout_full_page" class="container-fluid">
-    <button id="button_for_checkout">PURCHASE<i class="bi bi-arrow-bar-right display-6"></i></button>
-    </div>
-    `
-})
-
 // purchase thanks
-let purchase = document.querySelector("#button_for_checkout")
+let purchase = document.querySelector("#checkout_button")
 let display = document.querySelector("#checkout_content")
 
 purchase.addEventListener("click", purchase_thanks);
 function purchase_thanks() {
     display.innerHTML += `
     <div id="thanks_for_buyng">
+    <div id="reload">
+            <i class="bi bi-x-circle" onclick="reload()" id="close_button"></i>
+        </div>
         <p>THANKS FOR YOUR PURCHASE. IT WILL BE ATTENDED TO SOON.</p>
     </div>
     `
 }
+
+// reload button
+function reload() {
+    location.reload()
+}
+
+// checkout
+let checkout_result = document.querySelector("#checkout_content")
+let store_purchase = JSON.parse(localStorage.getItem("check_out"));
+
+
+Object.keys(store_purchase).forEach( (product) => {
+    let productlist = store_purchase[product];
+    checkout_result.innerHTML += `
+    <div id="products_page_container">
+            <div class="card" style="width: 18rem;" id="card_checkout">
+                <img id="car_pics" src="${productlist.image_url}" class="card-img-top img-fluid" alt="images" loading="lazy">
+                <div class="card-body" id="body_of_card">
+                    <h5 class="card-car_title">${productlist.car_model.slice(0, 18)+" ..."}</h5>
+                    <p class="card-text">${productlist.price}</p>
+                </div>
+            </div>
+    </div>
+    `
+})

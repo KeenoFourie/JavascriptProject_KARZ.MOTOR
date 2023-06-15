@@ -1,7 +1,4 @@
-
-
-
-
+let product_checkout = [];
 // Landing page section
 let landing_page = [
     {
@@ -99,7 +96,7 @@ let  featured_products = JSON.parse(localStorage.getItem("Car_Models")) ? JSON.p
 
 // display products page content
 try{
-    featured_products.forEach((product)=>{
+    featured_products.forEach((product, index)=>{
         display.innerHTML +=`
         <div id="products_page_container">
             <div class="card" style="width: 18rem;">
@@ -107,7 +104,7 @@ try{
                 <div class="card-body" id="body_of_card">
                     <h5 class="card-car_title">${product.car_model.slice(0, 18)+" ..."}</h5>
                     <p class="card-text">${product.price}</p>
-                    <a href="../html/checkout.html" class="btn btn-primary" id="cart_add">+ Cart</a>
+                    <button class="btn btn-primary" id="cart_add" onclick='addToCheckout(${index})'>+ Cart</button>
                 </div>
             </div>
     </div>
@@ -119,6 +116,12 @@ try{
 
 
 
+// checkout
+function addToCheckout(index) {
+    product_checkout.push(featured_products[index]);
+    localStorage.setItem("check_out", JSON.stringify(product_checkout));
+    console.log(product_checkout);
+}
 
 
 
@@ -155,3 +158,5 @@ contact_footer_page.forEach((product)=> {
     </div>
     `
 })
+
+
